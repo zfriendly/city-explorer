@@ -8,25 +8,37 @@ function City(props) {
   let cityMap = props.data.map(place => {
     if (props.match.params.name === place.city) {
       let attractions = place.museums.map(museum => {
-        return <li>{museum.name}</li>;
+        return (
+          <Link to={"/museum/" + museum.name}>
+            <div className="attractions__card">{museum.name}</div>
+          </Link>
+        );
       });
       let food = place.restaurants.map(restaurant => {
         return (
           <Link to={"/restaurant/" + restaurant.name}>
-            <div className="restaurant__card">{restaurant.name}</div>
+            <div className="attractions__card">{restaurant.name}</div>
           </Link>
         );
       });
       return (
         <div className="city__page">
-          <div className="city__left">
+          <div className="city__image">
             <img src={place.squareImage}></img>
           </div>
-          <div className="city__right">
+          <div className="restaurants">
             <div className="city__name">
               Michelin Star Restaurants in {place.city}
             </div>
-            <div className="restaurant__container">{food}</div>
+            <div className="city__scroll">Scroll for more options!</div>
+            <div className="attractions__container">{food}</div>
+          </div>
+          <div className="museums">
+            <div className="city__name">
+              Museums and Other Things to See in {place.city}
+            </div>
+            <div className="city__scroll">Scroll for more options!</div>
+            <div className="attractions__container">{attractions}</div>
           </div>
         </div>
       );
