@@ -1,13 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
-function Tile() {
+function Tile(props) {
   return (
-    <div className="tile__container">
-      <div className="tile CHI">Chicago</div>
-      <div className="tile LA">Los Angeles</div>
-      <div className="tile NYC">New York City</div>
-      <div className="tile SF">San Francisco</div>
-      <div className="tile DC">Washington, D.C.</div>
+    <div className="tile">
+      <div className="tile__text">{props.name}</div>
+      <div className="tile__overlay"></div>
+      <div
+        className="tile__image"
+        style={{ backgroundImage: `url(${props.image})` }}
+      ></div>
     </div>
   );
 }
