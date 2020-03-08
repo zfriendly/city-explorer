@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
+import "./City.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Tilecontainer from "./Tilecontainer";
 import Restaurant from "./Restaurant";
+import Museum from "./Museum";
 import { Route, Link } from "react-router-dom";
 import City from "./City";
 import HomeIcon from "@material-ui/icons/Home";
@@ -44,6 +46,12 @@ class App extends Component {
             path="/restaurant/:restaurant"
             render={routerProps => (
               <Restaurant data={this.state.cities} {...routerProps} />
+            )}
+          />
+          <Route
+            path="/museum/:museuum"
+            render={routerProps => (
+              <Museum data={this.state.cities} {...routerProps} />
             )}
           />
 
