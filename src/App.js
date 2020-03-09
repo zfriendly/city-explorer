@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import "./City.css";
 import "./Restaurant.css";
+import "./Museum.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Tilecontainer from "./Tilecontainer";

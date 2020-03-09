@@ -1,4 +1,4 @@
-.restaurant__page {
+.museum__page {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -10,20 +10,21 @@
   height: 100vh;
 }
 
-.restaurant__info {
+.museum__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 3em;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   font-size: 3vh;
 }
-.restaurant__name {
+.museum__name {
   text-align: center;
   font-size: 4vh;
   text-decoration: underline;
 }
-.restaurant__button {
+.museum__button {
   background-color: black;
   padding: 10px;
   border-radius: 5px;
@@ -34,11 +35,11 @@
   margin: 0 auto;
 }
 
-.restaurant__info a {
+.museum__info a {
   color: white;
   text-decoration: none;
 }
 
-/* .restaurant__page span {
-  text-decoration: underline;
-} */
+/* .museum__page span {
+    text-decoration: underline;
+  } */
