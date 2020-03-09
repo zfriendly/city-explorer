@@ -47,7 +47,6 @@
 
 .attractions__container {
   display: grid;
-  align-content: center;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2px;
   font-size: 1.25vh;

@@ -16,17 +16,4 @@ const Restaurant = props => {
   return <div className="restaurant__page">{restaurantData.name}</div>;
 };
 
-// function Restaurant(props) {
-//   console.log(props.match.params);
-//   let cityMap = props.data.map(place => {
-//     if (props.match.params.name === place.city) {
-//       let food = place.restaurants.map(restaurant => {
-//         return <div className="restaurant__page">{restaurant.name}</div>;
-//       });
-//       return <div>{food}</div>;
-//     }
-//   });
-//   return <div>{cityMap}</div>;
-// }
-
 export default Restaurant;

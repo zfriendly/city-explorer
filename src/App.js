@@ -15,11 +15,12 @@ class App extends Component {
     super();
     this.state = {
       cities: null,
-      ready: false
+      ready: false,
+      rootUrl: window.location.origin
     };
   }
   componentDidMount() {
-    fetch("http://localhost:3001/")
+    fetch("https://michelin-city-explorer.herokuapp.com/")
       .then(res => res.json())
       .then(data => this.setState({ cities: data, ready: true }));
   }
