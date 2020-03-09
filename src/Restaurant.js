@@ -28,7 +28,7 @@ const Restaurant = props => {
           <span>Cuisine Type: </span>
           {restaurantData.cuisine}
         </div>
-        <div className="restaurant__property">
+        <div className="restaurant__pry">
           <span>Price: </span>
           {restaurantData.price}
         </div>

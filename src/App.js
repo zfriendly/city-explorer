@@ -21,7 +21,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("http://localhost:3001/")
+    fetch("https://michelin-city-explorer.herokuapp.com/")
       .then(res => res.json())
       .then(data => this.setState({ cities: data, ready: true }));
   }
