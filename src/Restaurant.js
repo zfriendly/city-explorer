@@ -4,11 +4,16 @@ import { Link } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 
 const Restaurant = props => {
-  let restaurantData = props.data.filter(
-    datum => datum.id === props.match.params.id
+  let cityMap = props.data.filter(
+    town => town.city === props.match.params.name
   );
+  console.log(cityMap);
+  let restaurantData = cityMap[0].restaurants.filter(
+    food => food.name === props.match.params.restaurant
+  );
+  restaurantData = restaurantData[0];
   console.log(restaurantData);
-  return <div>Restaurant Data</div>;
+  return <div className="restaurant__page">{restaurantData.name}</div>;
 };
 
 // function Restaurant(props) {

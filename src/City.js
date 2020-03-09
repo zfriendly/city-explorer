@@ -9,14 +9,14 @@ function City(props) {
     if (props.match.params.name === place.city) {
       let attractions = place.museums.map(museum => {
         return (
-          <Link to={"/museum/" + museum.name}>
+          <Link to={`/city/${place.city}/museum/` + museum.name}>
             <div className="attractions__card">{museum.name}</div>
           </Link>
         );
       });
       let food = place.restaurants.map(restaurant => {
         return (
-          <Link to={"/restaurant/" + restaurant.name}>
+          <Link to={`/city/${place.city}/restaurant/` + restaurant.name}>
             <div className="attractions__card">{restaurant.name}</div>
           </Link>
         );

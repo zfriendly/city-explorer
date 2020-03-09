@@ -38,18 +38,21 @@ class App extends Component {
           />
           <Route
             path="/city/:name"
+            exact
             render={routerProps => (
               <City data={this.state.cities} {...routerProps} />
             )}
           />
           <Route
-            path="/restaurant/:restaurant"
+            path="/city/:name/restaurant/:restaurant"
+            exact
             render={routerProps => (
               <Restaurant data={this.state.cities} {...routerProps} />
             )}
           />
           <Route
-            path="/museum/:museuum"
+            path="/city/:name/museum/:museum"
+            exact
             render={routerProps => (
               <Museum data={this.state.cities} {...routerProps} />
             )}
