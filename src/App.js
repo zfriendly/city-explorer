@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./City.css";
+import "./Restaurant.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import Tilecontainer from "./Tilecontainer";
@@ -9,7 +10,7 @@ import Museum from "./Museum";
 import { Route, Link } from "react-router-dom";
 import City from "./City";
 import HomeIcon from "@material-ui/icons/Home";
-
+// https://michelin-city-explorer.herokuapp.com/
 class App extends Component {
   constructor() {
     super();
@@ -20,7 +21,7 @@ class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("https://michelin-city-explorer.herokuapp.com/")
+    fetch("http://localhost:3001/")
       .then(res => res.json())
       .then(data => this.setState({ cities: data, ready: true }));
   }
