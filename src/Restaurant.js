@@ -32,7 +32,7 @@ const Restaurant = props => {
           <span>Price: </span>
           {restaurantData.price}
         </div>
-        <a href={restaurantData.url}>
+        <a href={restaurantData.url} target="_blank">
           <div className="restaurant__button">Learn More</div>
         </a>
       </div>

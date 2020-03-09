@@ -10,7 +10,6 @@ import Restaurant from "./Restaurant";
 import Museum from "./Museum";
 import { Route, Link } from "react-router-dom";
 import City from "./City";
-import HomeIcon from "@material-ui/icons/Home";
 // https://michelin-city-explorer.herokuapp.com/
 class App extends Component {
   constructor() {

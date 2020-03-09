@@ -18,21 +18,22 @@
   display: flex;
   align-items: center;
   height: 800px;
+  box-shadow: 5px 5px 5px rgba(163, 162, 162, 0.92);
 }
 */ .city__name {
   font-size: 3vh;
-  margin: 15px 0;
+  margin: 15px auto;
   font-family: "Spartan", sans-serif;
 }
 
 .city__scroll {
   font-size: 1vh;
-  margin-bottom: 10px;
+  margin: 10px auto;
   font-family: "Spartan", sans-serif;
 }
 .attractions__card {
   height: 75px;
-  width: 170px;
+  width: 160px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -55,5 +56,6 @@
   max-width: 350px;
   overflow-y: scroll;
   padding: 10px;
-  border: 3px solid rgba(0, 0, 0, 0.605);
+  border: 2px solid rgba(0, 0, 0, 0.605);
+  box-shadow: 5px 5px 5px rgba(163, 162, 162, 0.92);
 }

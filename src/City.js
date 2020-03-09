@@ -27,15 +27,17 @@ function City(props) {
             <img src={place.squareImage}></img>
           </div>
           <div className="restaurants">
-            <div className="city__name">
-              Michelin Star Restaurants in {place.city}
+            <div className="restaurants__header">
+              <div className="city__name">
+                Michelin Star Restaurants in {place.city}
+              </div>
+              <div className="city__scroll">Scroll for more options!</div>
             </div>
-            <div className="city__scroll">Scroll for more options!</div>
             <div className="attractions__container">{food}</div>
           </div>
           <div className="museums">
             <div className="city__name">
-              Museums and Other Things to See in {place.city}
+              Museums, Parks and More in {place.city}
             </div>
             <div className="city__scroll">Scroll for more options!</div>
             <div className="attractions__container">{attractions}</div>

@@ -26,6 +26,7 @@ const Museum = props => {
         </div>
         <a
           href={`http://www.google.com/search?q=${museumData.name}+${museumData.city}`}
+          target="_blank"
         >
           <div className="museum__button">Learn More</div>
         </a>
