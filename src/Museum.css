@@ -27,7 +27,8 @@
   text-decoration: underline;
 }
 .museum__button {
-  background-color: black;
+  background-color: #123c69;
+  box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.79);
   padding: 10px;
   border-radius: 5px;
   text-align: center;
