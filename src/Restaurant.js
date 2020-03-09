@@ -20,14 +20,21 @@ const Restaurant = props => {
       </div>
       <div className="restaurant__info">
         <div className="restaurant__name">{restaurantData.name}</div>
-        <div className="restaurant__property">Michelin Stars</div>
-        <div className="restaurant__stars"> {restaurantData.michelinStars}</div>
-        <div className="restaurant__property">Type of Cuisine</div>
-        <div className="restaurant__cuisine">{restaurantData.cuisine}</div>
-        <div className="restaurant__property">Price</div>
-        <div className="restaurant__property">{restaurantData.price}</div>
-        <div className="restaurant__property">Michelin Stars</div>
-        <div className="restaurant__property">Michelin Stars</div>
+        <div className="restaurant__property">
+          <span>Michelin Stars: </span>
+          {restaurantData.michelinStars}
+        </div>
+        <div className="restaurant__property">
+          <span>Cuisine Type: </span>
+          {restaurantData.cuisine}
+        </div>
+        <div className="restaurant__property">
+          <span>Price: </span>
+          {restaurantData.price}
+        </div>
+        <a href={restaurantData.url}>
+          <div className="restaurant__button">Learn More</div>
+        </a>
       </div>
     </div>
   );

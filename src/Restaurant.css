@@ -5,7 +5,7 @@
   align-items: center;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.146);
-  padding: 0 1%;
+  padding: 0 10%;
   width: 100%;
   height: 100vh;
 }
@@ -13,7 +13,31 @@
 .restaurant__info {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
+  line-height: 3em;
   justify-content: flex-start;
   text-align: left;
+  font-size: 3vh;
 }
+.restaurant__name {
+  text-align: center;
+  font-size: 4vh;
+  text-decoration: underline;
+}
+.restaurant__button {
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 2.5vh;
+}
+
+.restaurant__info a {
+  color: white;
+  text-decoration: none;
+}
+
+/* .restaurant__page span {
+  text-decoration: underline;
+} */
